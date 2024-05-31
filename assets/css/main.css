@@ -69,10 +69,13 @@ body {
             height: auto;
             width: 150px;
         }
+        h1{
+            font-size: clamp(2rem, -1.75rem + 12vw, 5rem);
+        }
 }
 
 .container {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -109,14 +112,18 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center ;
       
 }
-
+.cercacity{
+    font-size: clamp(0.4375rem, -0.1094rem + 1.75vw, 0.875rem);
+}
 .top-banner form input {
     height: 40px;
-    padding: 5px 5px 10px;
+    width: 80%;
     
-    margin-top: 10px;
+    
+   
     color: rgb(61, 61, 61);
     font-size: 16px;
     font-style: italic;
@@ -131,20 +138,18 @@ body {
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.1em;
-    padding: 15px 20px;
-    margin-left: 15px;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
     color: #000000;
         .images-search{
-            display: block;
+            
             height: 25px;
         }
 }
 
-.top-banner form button:hover {
-    /* background: var(--darkred); */
-}
+/* .top-banner form button:hover {
+    /* background: var(--darkred); 
+} */
 
 .top-banner form .msg {
     position: absolute;
@@ -179,7 +184,8 @@ body {
 .cities {
     display: flex;
     gap: 3rem;
-    margin-left: 4em;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -225,6 +231,7 @@ body {
         }
 }
 
+
 /* MQ
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 1000px) {
@@ -237,7 +244,7 @@ body {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: px) {
     .heading,
     .ajax-section .city-temp {
     font-size: 3rem;
@@ -248,8 +255,9 @@ body {
     }
     
     .top-banner form {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     }
     
     .top-banner form input,
